@@ -1,8 +1,8 @@
 /**
- * 
- * @param {string} nodeName 
- * @param {Record} attributes 
- * @param  {string | Record} arguments 
+ *
+ * @param {string} nodeName
+ * @param {Record} attributes
+ * @param  {string | Record} arguments
  * @returns {nodeName: string, attributes: object, children: array}
  */
 function h(nodeName, attributes, ...arguments) {
@@ -43,3 +43,6 @@ const vdom = h(
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed."
   )
 );
+
+const root = document.getElementById("root");
+root.appendChild(render(vdom));
